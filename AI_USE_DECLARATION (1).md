@@ -12,13 +12,15 @@ Required by the AI Fundamentals syllabus, section 8 (AI Use Policy).
 
 ## 2. Purpose and key prompts
 
-We gave the assistant the three course files (Final Project brief, Final Project topic list, AI Fundamentals syllabus)
-and the grading rubric, then wrote (translated from Russian):
+We used the AI as a coding and writing assistant. The team made the project decisions; the AI produced drafts that we reviewed, ran and tested.
 
-1. "Choose the topic yourself and ask me questions. There are 2 people in the team."
-2. Answers to its follow-up questions: topic = *Mini Campus Delivery Robot* (topic 02 of the official list);
-   interface = Streamlit web UI; deliverables = code + README + tests, a Q&A sheet for the defense, demo slides.
-3. "Write the AI use declaration yourself."
+Stage	Team	AI assistant
+Topic and scope	Chose Mini Campus Delivery Robot (topic 02 of the official list) and the three course topics: search, probability, MDP	Suggested how to connect the three algorithms
+Requirements	Set the requirements from the course brief and rubric: web UI (Streamlit), automated tests, README with input → steps → output, slides for the demo	—
+Implementation	Reviewed the code, asked for explanations of parts we did not understand	Generated the code of robot/, app.py, demo.py, experiments.py and the tests
+Model parameters	Checked that the toy numbers are labelled as assumptions	Proposed rewards and probabilities so that all three actions (Move / Wait / Reroute) occur
+Testing	Installed and ran the app and tests on our own laptops (Windows / macOS), ran the three demo scenarios	Wrote the pytest suite and the Monte Carlo evaluation
+Documentation and defense	Uploaded the project to GitHub, prepared and rehearsed the defense, split the roles	Drafted the README, slides and a defense Q&A sheet
 
 ## 3. What the AI contributed
 
